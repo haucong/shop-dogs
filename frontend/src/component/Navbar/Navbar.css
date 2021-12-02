@@ -1,0 +1,48 @@
+.nav-header {
+    width: 100%;
+    position: fixed;
+    background-color: aqua;
+    height: 80px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.navbar>img {
+    width: 40px;
+    height: 40px;
+    line-height: 40;
+    margin: 14px;
+}
+.nav-links{
+    margin: 22px 10px;
+}
+.nav-links ul{
+    list-style: none;
+}
+.nav-links ul li {
+    margin-right: 12px;
+    display: inline-block;
+    position: relative;
+}
+.nav-links ul li::after{
+     content: "";
+     width: 0%;
+     height: 2px;
+     background: #f44336;
+     display: block;
+     margin: auto;
+     transition: 0.4s
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+     margin-right: 12px;
+}
+.nav-links ul li a{
+    margin-right: 12px;
+    text-decoration: none;
+    color: rgba(51, 51, 51, 0.685);
+}
